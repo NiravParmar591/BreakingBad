@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "IM Fell English";
+  /* src: url('../fonts/IM_Fell_English/IMFellEnglish-Regular.ttf') format('truetype'); */
+  src: url('../assets/fonts/IM_Fell_English/IMFellEnglish-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url('../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-void-black: #0D0D0D;       /* Bg, nav, footers */
+  --color-carbon: #1A1A1A;           /* Cards, panels */
+  --color-heisenberg-gold: #D4A017;  /* Primary accent, CTA */
+  --color-meth-white: #E8E8E8;       /* Body text, headings */
+  --color-desert-sage: #4A7C59;      /* Success, tags */
+  --color-cartel-red: #8B1A1A;       /* Danger, alerts */
+  --color-as-gray: #3A3A3A;           /* Borders, dividers */
+  --color-antique-gold: #C9A84C;     /* Char-line hover accent */
+  --color-burnt-orange: #E05C2A;     /* Char-line hover accent */
+  --color-seafoam: #7EC8A0;          /* Char-line hover accent */
+  --color-signal-red: #DD4444;       /* Char-line hover accent */
+  --color-steel-blue: #5B8DD9;        /* Char-line hover accent */
+  --color-stone-gray: #888888;       /* Char-line hover accent */
+  --color-soft-violet: #B07CC6;      /* Char-line hover accent */
+  --color-sun-yellow: #E8C84A;       /* Char-line hover accent */
+  --font-bb-serif: "IM Fell English", "Palatino Linotype", serif;
+  --font-bb-sans: "Oswald", "Arial Black", sans-serif;
+}
+
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* 
+so that here i need a color combination for it
+9:54 am
+
+What's the vibe you're going for with the site? Let me pull up some Breaking Bad inspired palettes.
+
+Here's the palette breakdown:
+
+Core idea — keep it dark and gritty. The show lives in blacks, desert dust, and tension. Gold does the heavy lifting as the accent (Heisenberg's brand, the money, the empire).
+
+The main pairings to use:
+
+    #0D0D0D bg +
+    #D4A017 gold — hero sections, nav highlights, anything that needs to feel powerful
+    #1A1A1A cards +
+    #E8E8E8 text — readable, clean, dark
+    #D4A017 bg +
+    #0D0D0D text — buttons and CTAs
+    #4A7C59 sage — subtle green nods to the desert/chemistry angle, use sparingly for success/tags
+    #8B1A1A red — danger zones, errors, anything with threat
+
+Let me know when you're ready to start building the actual UI and I can help you wire up the Tailwind config with these as custom colors. */
